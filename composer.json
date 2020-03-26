@@ -1,0 +1,55 @@
+{
+    "name": "nicodinus/laravel-zero-foundation",
+    "description": "This is a mirror from laravel-zero/foundation.",
+    "license": "MIT",
+	"homepage": "https://github.com/Nicodinus/laravel-zero-foundation",
+	"authors": [
+		{
+            "name": "Aleskei Iarovoi",
+            "email": "nicodinus@yandex.ru"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "github",
+            "url": "https://github.com/Nicodinus/illuminate-filesystem"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/Nicodinus/illuminate-log"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/Nicodinus/illuminate-events"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/Nicodinus/illuminate-cache"
+        }
+    ],
+    "require": {
+        "php": "^7.4.2",
+        "ext-json": "^7.4.2",
+        "illuminate/config": "^7.2",
+        "illuminate/contracts": "^7.2",
+        "illuminate/container": "^7.2",
+        "nicodinus/illuminate-filesystem": "master",
+        "nicodinus/illuminate-log": "master",
+        "nicodinus/illuminate-events": "master",
+        "nicodinus/illuminate-cache": "master"
+    },
+	"require-dev": {},
+    "autoload": {
+        "files": [
+            "src/Illuminate/Foundation/helpers.php"
+        ],
+        "psr-4": {
+            "Illuminate\\": "src/Illuminate/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
